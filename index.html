@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Adarsh Kumar Jha — Portfolio</title>
+  <style>
+    /* enable smooth scrolling when clicking anchor links */
+    html{scroll-behavior:smooth}
+    :root{
+      --bg1:#0b0f24; --bg2:#11193b; --card:#161b36; --accent:#00e0ff; --muted:#9ca3af; --text:#e5e7eb; --highlight:#facc15;
+      --ff:'Poppins',sans-serif;
+    }
+    *{box-sizing:border-box;
+      margin:0;
+      padding:0}
+    body{font-family:var(--ff);background:linear-gradient(160deg,var(--bg1),var(--bg2));color:var(--text);line-height:1.6;overflow-x:hidden}
+  /* top navigation (right aligned) */
+  .topnav{display:flex;justify-content:flex-end;gap:36px;padding:18px 0;color:var(--muted);font-weight:600}
+  .topnav a{color:var(--muted);text-decoration:none;padding:6px 8px;border-radius:8px}
+  .topnav a:hover{color:var(--text);background:rgba(255,255,255,0.03)}
+    .container{max-width:1100px;margin:0 auto;padding:40px 20px}
+
+  header{display:flex;flex-direction:column;align-items:flex-start;gap:12px;background:var(--card);padding:30px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,0.5);animation:fadeIn 1s ease forwards}
+    /* place image above the text and align everything to the left */
+    header img{width:230px;height:230px;border-radius:16px;object-fit:cover;border:3px solid var(--accent);align-self:flex-start}
+    header > div{display:flex;
+      flex-direction:column;align-items:flex-start;text-align:left;margin-top:8px}
+    header h1{font-size:1.8rem;color:var(--accent)}
+  header .role{font-weight:600;color:var(--highlight)}
+  header p{color:var(--muted);max-width:680px}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+    section{margin-top:40px;padding:20px;background:rgba(255,255,255,0.03);border-radius:16px;
+    box-shadow:0 0 25px rgba(0,0,0,0.3)}
+
+    section h2{color:var(--accent);margin-bottom:10px;font-size:1.5rem;
+    border-bottom:2px solid var(--accent);display:inline-block;
+    padding-bottom:5px}
+
+    .about p{color:var(--text)}
+
+    .skills .chip{display:inline-block;
+      padding:10px 14px;
+    margin:6px;
+    border-radius:999px;
+    background:rgba(0,224,255,0.1);
+    color:var(--accent);
+    font-weight:600;
+    transition:0.3s}
+    .skills .chip:hover{background:var(--accent);color:#000}
+
+    .projects .proj{background:var(--card);padding:16px;
+    border-radius:12px;
+    margin-bottom:14px;
+    transition:0.3s;
+    box-shadow:0 4px 15px rgba(0,0,0,0.4)}
+
+    .projects .proj:hover{transform:translateY(-4px);box-shadow:0 8px 25px rgba(0,0,0,0.5)}
+    .projects h3{color:var(--highlight)}
+    .projects p{color:var(--muted)}
+
+    .contact-box{display:flex;
+      flex-wrap:wrap;gap:14px;
+      margin-top:10px;padding:20px;
+      background:var(--card);border:2px solid var(--accent);border-radius:14px;justify-content:center}
+
+    .contact-box a{color:var(--text);text-decoration:none;
+    background:rgba(255,255,255,0.05);
+    padding:12px 20px;
+    border-radius:10px;
+    transition:0.3s;
+    display:flex;
+    align-items:center;
+    gap:8px}
+
+    .contact-box a:hover{background:var(--accent);color:#000;font-weight:600}
+
+    footer{text-align:center;color:var(--muted);margin-top:40px;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <nav class="topnav" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <header>
+      <img src="https://i.ibb.co/FLkrpncw/Whats-App-Image-2025-10-04-at-23-38-06-5466f35e.jpg" alt="Whats-App-Image-2025-10-04-at-23-38-06-5466f35e" border="0" /></a>
+      <div>
+        <h1>Adarsh Kumar Jha</h1>
+        <div class="role">AI & Data Science Student | Aspiring Full Stack Developer</div>
+        <p>Currently pursuing B.Tech at RIET College, Jaipur (1st Year). Passionate about crafting digital experiences and bringing ideas to life through code.</p>
+      </div>
+    </header>
+
+  <section id="about" class="about">
+      <h2>About Me</h2>
+      <p>Hello! I'm <strong>Adarsh Kumar Jha</strong>, a first-year B.Tech student in <strong>Artificial Intelligence and Data Science</strong> at RIET College, Jaipur. I've completed <strong>HTML, CSS, and JavaScript</strong>, and am moving toward becoming a <strong>Full Stack Web Developer</strong>. I’ve built three front-end projects, and in C language, I’ve completed two projects — Library Management System and Bank Management System.
+      <br><br>
+      I'm also diving deep into <strong>Data Structures and Algorithms in C++</strong> while learning <strong>AI & ML</strong> from IIT Patna (certified course). For me, <strong>coding is not a hobby, it's the heartbeat of my journey</strong>. I believe in continuous learning and solving real-world problems through technology.</p>
+    </section>
+
+  <section id="skills" class="skills">
+      <h2>Technical Skills</h2>
+      <div>
+        <span class="chip">HTML</span>
+        <span class="chip">CSS</span>
+        <span class="chip">JavaScript</span>
+        <span class="chip">C</span>
+        <span class="chip">C++ (DSA)</span>
+        <span class="chip">AI/ML Basics</span>
+        <span class="chip">Full Stack Development (Learning)</span>
+      </div>
+    </section>
+
+  <section id="projects" class="projects">
+      <h2>Projects</h2>
+      <div class="proj">
+        <h3>Library Management System (C)</h3>
+        <p>A console-based system for managing books, issuing and returning with record keeping.</p>
+      </div>
+      <div class="proj">
+        <h3>Bank Management System (C)</h3>
+        <p>Feature-rich banking simulation allowing users to create, deposit, and withdraw accounts.</p>
+      </div>
+      <div class="proj">
+        <h3>Personal Portfolio Website</h3>
+        <p>This responsive portfolio built using HTML, CSS, and JS showcases my work and passion for web development.</p>
+      </div>
+    </section>
+
+    <section class="hobbies">
+      <h2>Hobbies & Interests</h2>
+      <p>I love playing <strong>Cricket, Volleyball, and Kabaddi</strong>. Sports keep me active, singing relaxes my mind, and coding keeps me alive. My motto: <em>“Coding isn’t what I do, it’s who I am.”</em></p>
+    </section>
+
+  <section id="contact" class="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-box">
+        <a href="tel:+9199********">📞 +91 99********</a>
+        <a href="mailto:jhaadarsh128@gmail.com">✉ jhaadarsh128@gmail.com</a>
+        <a href="https://instagram.com/jha_adarsh_13" target="_blank">📸 Instagram</a>
+        <a href="https://www.linkedin.com/in/your-link" target="_blank">🔗 LinkedIn</a>
+      </div>
+    </section>
+
+    <footer>
+      <p>Made with ❤ by <strong>Adarsh Kumar Jha</strong> | “The code I write today builds my tomorrow.”</p>
+    </footer>
+  </div>
+</body>
+</html>
